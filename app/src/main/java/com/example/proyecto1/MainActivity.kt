@@ -7,11 +7,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        variablesYConstantes()
+        sentenciaIf()
         sentenciaWhen()
     }
 
     // Variables y Constantes
-ll
+
 
 
 }
@@ -20,7 +22,7 @@ ll
         //Variables
 
         var myFirstVariable = "Esta es una prueba"
-        var myFirstNumber = 1
+        var myFirstNumber = 10000
         var mySecondVariable = "Segunda prueba para ver si funciona"
 
         val myFirstConstant = "Continuamos con la pruebas"
@@ -32,7 +34,7 @@ ll
         val myString3 = myFirstVariable + " " + mySecondVariable
 
             println(myString3)
-        ////
+        //Enteros
 
         val myInt = 100
         val myInt2 = 200
@@ -51,7 +53,7 @@ ll
 
 
     }
-
+// Operador condicionales <> <= >= == !=
     private fun sentenciaIf(){
         val myNumber = 11
         if(myNumber <= 10){
@@ -61,14 +63,22 @@ ll
         }
     }
 
+    //Operadores lógicos Y && O // \\?
+
     private fun sentenciaWhen(){
-        var Country = "Francia"
+        var Country = "USA"
 
         when(Country){
             "Guatemala" -> {
                 println("Se habla español")
             } "Francia" -> {
                 println("Se habla francés")
+            } "Nicaragua" -> {
+                println("El idioma es Español")
+            } "USA" ->{
+                println("El idioma es inglés")
+            } else ->{
+                println("No conocemos el idioma")
         }
         }
     }
